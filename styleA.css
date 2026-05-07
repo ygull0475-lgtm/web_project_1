@@ -1,0 +1,41 @@
+/* Reset margins for full height calculation */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; /* Equally spaces boxes vertically */
+    font-family: Tahoma, sans-serif;
+    font-size: 40px;
+}
+
+.box, .final {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box; /* Ensures border/padding stay within 100px */
+    text-align: center;
+    border-top: 1px solid #687291;
+    flex-shrink: 0; /* Prevents boxes from shrinking when window is small */
+}
+
+.type-a {
+    background-color: #dfe1e7;
+}
+
+.type-b {
+    background-color: #eeeff2;
+}
+
+.final {
+    background-color: #687291;
+    border: 4px solid black;
+    /* Vertical centering for text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
